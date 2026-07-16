@@ -128,7 +128,7 @@ lib_deps =
 Mimi_DeskBot/
 │
 ├── Mimi/               *Main Arduino Sketch
-│   ├── Rob.ino
+│   ├── Mimi.ino
 │   ├── face.cpp
 │   ├── face.h
 │   ├── motor.cpp
