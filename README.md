@@ -122,7 +122,7 @@ lib_deps =
 | Blink | Blink Animation |
 | Wink | Wink Animation |
 
-# 📂 Project Structure
+# Project Structure
 
 ```
 Mimi_DeskBot/
