@@ -32,7 +32,7 @@ This ESP32-powered robot is designed to create personality using animated OLED e
 
 ## Hardware Connections
 
-### Wiring
+
                     ┌──────────────────────────┐
                     │    2S Li-ion Battery     │
                     │           7.4V           │
