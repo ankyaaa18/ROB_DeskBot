@@ -23,7 +23,7 @@ The system is powered by a 2S 18650 Li-ion battery pack. An LM2596 buck converte
 ---
 ## Hardware Subsystems
 
-### 🧠 Control System
+### Control System
 
 The ESP32 acts as the central processing unit of Mimi DeskBot. It is responsible for:
 
@@ -33,7 +33,7 @@ The ESP32 acts as the central processing unit of Mimi DeskBot. It is responsible
 - Running the Wi-Fi access point
 - Hosting the web-based control dashboard
 
-### ⚙️ Drive System
+### Drive System
 
 The robot uses two N20 geared DC motors arranged in a differential-drive configuration.
 
@@ -45,7 +45,7 @@ Independent control of the left and right motors allows the robot to:
 - Turn right
 - Rotate in place
 
-### 👀 Display System
+### Display System
 
 The SSD1306 OLED display provides the robot with an expressive face.
 
@@ -56,10 +56,10 @@ It is used to display:
 - Blinking animations
 - Robot status information
 
-### 📡 Wireless Control
+### Wireless Control
 
 The ESP32 creates a Wi-Fi network and hosts a web server. A user can connect to the robot using a phone or computer and control its movement through the web dashboard.
 
-### 🔋 Power System
+### Power System
 
 The 2S Li-ion battery pack serves as the primary power source. The LM2596 buck converter regulates the battery voltage to provide the required voltage for the electronics.
