@@ -63,3 +63,38 @@ The ESP32 creates a Wi-Fi network and hosts a web server. A user can connect to 
 ### Power System
 
 The 2S Li-ion battery pack serves as the primary power source. The LM2596 buck converter regulates the battery voltage to provide the required voltage for the electronics.
+
+## Hardware Connections
+
+
+                    ┌──────────────────────────┐
+                    │    2S Li-ion Battery     │
+                    │           7.4V           │
+                    └────────────┬─────────────┘
+                                 │
+                          Power Switch
+                                 │                      
+                   |─── ── ── ── ─── ── ──|
+                   |                      │
+      ┌────────────▼────────────┐         │
+      │ LM2596 Buck Converter   │         │
+      └───────────────────┬─────┘         │ 
+                          │               │ 
+                          │               │
+                          │               │
+                    ┌─────▼─────┐─────────▼──────────────────────────┐
+                    │   ESP32   │           DRV8833                  │
+                    │           │                                    │
+                    │           │                                    │
+                    │  GPIO 25  │  --->   IN1      OUT1  ---> Motor1 │
+                    │  GPIO 26  │  --->   IN2      OUT2  ---> Motor1 │
+                    │  GPIO 27  │  --->   IN1      OUT3  ---> Motor1 │
+                    │  GPIO 14  │  --->   IN2      OUT4  ---> Motor1 │
+                    │           │────────────────────────────────────┘
+                    │           │───────────────────┐                   
+                    │  GPIO 21  │  --->  OLED (SCA) │
+                    │  GPIO 22  │  --->  OLED (SDA) │
+                    │  GND      │  --->  OLED GND   │
+                    │  3V3      │  --->  OLED VCC   │
+                    └───────────┘───────────────────┘
+
